@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  font-weight: 900;
+}
+
+.NAVBAR {
+  display: flex;
+  padding-inline: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 100%;
+}
+
+.WORDAART {
+  color: red;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: -2px 4px 0px rgba(248, 16, 39, 1);
+  border-radius: 100px;
+  background-color: blanchedalmond;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.good {
+  font-size: 2rem;
+  color: black;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+
+#truth {
+  border: 2px solid black;
+}
+
+.WORRD {
+  text-align: left;
+  color: red;
+}
+
+.bret {
+  border: 3px solid;
+}
+
+nav {
+  width: 100%;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gadgets {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 200px));
+  gap: 30px;
+}
+
+.boxsize {
+  background-color: white;
+  border: 2px solid red;
+}
+
+/*for the name of each category*/
+.display {
+  text-align: center;
+  font-size: 60px;
+  margin: 30px;
+  border: 1px solid rgba(red, green, blue, alpha);
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
+}
+
+.food {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 200px));
+  gap: 30px;
+}
+
+.clothing {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 500px));
+  gap: 30px;
+}
+
+#position {
+  position: absolute;
+  left: 50px;
+}
+
+.goods {
+  list-style: none;
+  position: relative;
+  border: 1px solid;
+  font-size: 2rem;
+  display: block;
+}
+ .AllIneed{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border: 1px solid palegreen;
+  padding: 0;
+  font-size: 15px;
+  position: absolute;
+  left: -9px;
+  
+
+ }
+.dropdown{
+  display: block;
+  transform: translateY(-1em);
+  transition: translate, .5s;
+  visibility: hidden; 
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+}
+
+ .goods:hover .dropdown{
+  display: block;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+ .img:hover{
+  padding: 20px;
+}
