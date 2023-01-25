@@ -61,7 +61,25 @@ function addCartClicked(event) {
   var shopProducts = button.parentElement;
   var title = shopProducts.getElementByClassName("product-title")[0].innerText;
   console.log(title);
+  var price = shopProducts.getElementByClassName("price")[0].innerText;
+  var productImg = shopProducts.getElementByClassName("productImg")[0].src;
+  addProductToCart(title, price, productImg);
+  updateTotal();
 }
+
+function addProductToCart(title, price, productImg) {
+  var cartShopBox = document.createElement("div");
+  //cartShopBox.classList.add('cart-box')
+
+  var cartItems = document.getElementsByClassName("cart-content")[0];
+  var cartItemsNames =
+    cartItems.getElementsByClassName("cart-product-title")[0];
+  for (var i = 0; i < cartItemsNames.length; i++) {
+    alert("You have added it already to your cart");
+  }
+}
+
+var cartBoxContent =
 
 function updateTotal() {
   var cartContent = document.getElementsByClassName("cart-content")[0];
