@@ -18,7 +18,7 @@ function multiply(mA, mB) {
     for (var j = 0; j < mA.length; j++) {
       result[i][j] = 0; //result[i][j] is NaN, force to be zero
       for (var k = 0; k < mB.length; k++) {
-        result[i][j] += mA[i][k] * mB[k][j];
+        result[i][j] += mA[i][k] * 1;
       }
     }
   }
